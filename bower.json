@@ -1,0 +1,23 @@
+{
+  "name": "ULIKE",
+  "version": "0.0.0",
+  "authors": [
+    "Cedric LOMBARDOT <cedric.lombardot@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-cookies": "~1.4.0",
+    "angular-moment": "~0.10.1",
+    "bootstrap-sass": "~3.3.4",
+    "select2": "3.4.8",
+    "ui-select": "angular-ui-select#~0.12.1",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47"
+  }
+}

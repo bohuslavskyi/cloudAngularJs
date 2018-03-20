@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:ng="http://angularjs.org" ng-app="adConsole" ng-cloak style="height:100%;margin:0;padding:0">
+<head>
+    <title>ULike</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+    <!-- css vendor -->
+    <link href="css/vendor/ng-animation.css" rel="stylesheet"/>
+    <link href="css/vendor/animate.css" rel="stylesheet"/>
+    <link href="css/vendor/angular-chart.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <!-- css ulike -->
+    <link href="css/main.css" rel="stylesheet"/>
+
+</head>
+
+
+<body ng-class="{ 'sidebar-open': showHeaderLeftBar }">
+
+<aside ng-if="withLeftBar" id="sidenav" ng-controller="userCtrl">
+
+
+    <div class="profile">
+        <div class="usrPicture"></div>
+        <h2 style="display:inline-block">{{name}}</h2>
+        <p>{{currentUser.companyName}}</p>
+    </div>
+
+    <hr>
+
+    <ul class="nav navbar-nav">
+        <li>
+            <a href="#/homepage" ng-class="{active:isActive('/homepage')}">
+                <i class="fa fa-home"></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+
+
+
+
+        <div class="panel-group userCenterAccordion "
+             id="accordion"
+             data-toggle="collapse"
+             data-parent="#accordion"
+             data-target="#collapseFour">
+            <a ng-class="{active:isActive('/appStatsAPK')}">
+                <i class="fa fa-id-badge accordionIco"></i>
+                <span style="position: absolute; margin-top: 5px;">User center</span>
+                <i class="fa fa-caret-down onAccordionover" aria-hidden="true"
+                   style="float: right; margin-right: 20px"> </i>
+            </a>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul>
+                    <li>
+                        <a href="#/userCenter" ng-class="{active:isActive('/userCenter')}">
+                            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                            <i class="fa fa-info-circle accordionIco"></i>
+                            <span>User info</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#/userPayments" ng-class="{active:isActive('/userPayments')}">
+                            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                            <i class="fa fa-credit-card accordionIco"></i>
+                            <span>User payments</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#/notificationsCenter" ng-class="{active:isActive('/notificationsCenter')}">
+                            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                            <i class="fa fa-bell-o accordionIco"></i>
+                            <span>Notifications center</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#/rewards" ng-class="{active:isActive('/rewards')}">
+                            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                            <i class="fa fa-gift accordionIco"></i>
+                            <span>Rewards</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+        </div>
+        </div>
+        </li>
+
+
+        <li>
+            <a href="#/">
+                <i class="fa fa-lock"></i>
+                <span>Log out</span>
+            </a>
+        </li>
+
+
+    </ul>
+</aside>
+
+
+<!--<div ng-cloak class="wrapper ng-cloak" ui-view></div>-->
+<div ng-cloak class="ng-cloak wrapper" ng-view></div>
+</body>
+
+
+<!-- vendor -->
+
+<script type="text/javascript" src="js/vendor/angular.min2.js"></script>
+<script type="text/javascript" src="js/vendor/angular-route.js"></script>
+<script type="text/javascript" src="js/vendor/angular-animate.js"></script>
+<script type="text/javascript" src="js/vendor/angular-resource.js"></script>
+<script type="text/javascript" src="js/vendor/angular-cookies.js"></script>
+<script type="text/javascript" src="js/vendor/ng_route_ext.js"></script>
+<script type="text/javascript" src="js/vendor/jquery-2.0.3.js"></script>
+
+
+<script type="text/javascript" src="js/vendor/underscore.js"></script>
+<script type="text/javascript" src="js/vendor/moment.js"></script>
+<script type="text/javascript" src="js/vendor/ngCountries.min.js"></script>
+
+
+<script type="text/javascript" src="js/vendor/chart.min.js"></script>
+<script type="text/javascript" src="js/vendor/chartjs.js"></script>
+<script type="text/javascript" src="js/vendor/ngClipboard.js"></script>
+<script type="text/javascript" src="js/vendor/angular-chart.js"></script>
+<script type="text/javascript" src="js/vendor/cchart.js"></script>
+<script type="text/javascript" src="js/vendor/angular-sanitize.js"></script>
+<script type="text/javascript" src="js/vendor/ng-csv.min.js"></script>
+
+
+<script type="text/javascript" src="js/vendor/md5.js"></script>
+
+<script type="text/javascript" src="js/vendor/angular-moment.js"></script>
+<script type="text/javascript" src="js/vendor/loading-bar.min.js"></script>
+<script type="text/javascript" src="js/vendor/loading-bar.min.js"></script>
+<script type="text/javascript" src="js/vendor/select.min.js"></script>
+<script type="text/javascript" src="js/vendor/bootstrap.js"></script>
+<script type="text/javascript" src="js/vendor/ui-bootstrap-tpls-0.13.0.js"></script>
+
+
+<!-- js -->
+
+
+<!--<script type="text/javascript" src="dist/common.js"></script>-->
+<!--<script type="text/javascript" src="dist/app.js"></script>-->
+
+
+<script type="text/javascript" src="js/source/common/commonModule.js"></script>
+<script type="text/javascript" src="js/source/common/services/u-api.js"></script>
+<script type="text/javascript" src="js/source/common/services/u-storage.js"></script>
+
+
+<script type="text/javascript" src="js/source/advertiserConsole/advertiserConsoleModule.js"></script>
+<script type="text/javascript" src="js/source/advertiserConsole/controllers/auth.js"></script>
+<script type="text/javascript" src="js/source/advertiserConsole/controllers/userCtrl.js"></script>
+<script type="text/javascript" src="js/source/advertiserConsole/controllers/appStatsCtrl.js"></script>
+
+
+
+<script type="text/javascript" src="js/source/common/directives/common.directives.u-file.js"></script>
+<script type="text/javascript" src="js/source/common/directives/common.directives.u-header.js"></script>
+<script type="text/javascript" src="js/source/common/directives/common.directives.u-err-msg.js"></script>
+
+
+
+<script type="text/javascript"
+
+
+<script type="text/javascript" src="js/source/common/directives/common.directives.homepage.js"></script>
+
+
+<!--<script>-->
+<!--(function (i, s, o, g, r, a, m) {-->
+<!--i['GoogleAnalyticsObject'] = r;-->
+<!--i[r] = i[r] || function () {-->
+<!--(i[r].q = i[r].q || []).push(arguments)-->
+<!--}, i[r].l = 1 * new Date();-->
+<!--a = s.createElement(o),-->
+<!--m = s.getElementsByTagName(o)[0];-->
+<!--a.async = 1;-->
+<!--a.src = g;-->
+<!--m.parentNode.insertBefore(a, m)-->
+<!--})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');-->
+
+<!--ga('create', 'UA-64014724-1', 'auto');-->
+<!--ga('send', 'pageview');-->
+
+<!--</script>-->
+
+
+<script type="text/javascript" src="js/vendor/ui-bootstrap-tpls-0.13.0.js"></script>
+
+</html>

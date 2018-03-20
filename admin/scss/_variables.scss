@@ -1,0 +1,51 @@
+$main-blue:#304599;
+$ligh-grey: #afb0b0;
+$white: #ffffff;
+$orange: rgb(112, 112, 112);
+$grey: #6f6f6f;
+
+
+
+$body-bg: #f4f2f2;
+
+$navbar-default-color:             #ffffff;
+$navbar-default-bg:                transparent;
+$navbar-default-border:            transparent;
+$navbar-default-link-color:                #ffffff !default;
+$navbar-default-link-hover-color:          $grey;
+$navbar-default-link-hover-bg:             transparent !default;
+$navbar-default-link-active-color:         #ffffff !default;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-disabled-color:       #ffffff !default;
+$navbar-default-link-disabled-bg:          transparent !default;
+
+$navbar-on-body-bg: rgba(1,20, 39, 1);
+
+$light-blue: #afb0b0;
+$h1-color: $orange;
+$h2-color: $orange;
+$h3-color: $light-blue;
+$gray-dark: #505050;
+$content-color: $gray-dark;
+$brand-primary: $light-blue;
+$brand-warning: $orange;
+
+
+
+$font-family-sans-serif: "helvetica-67-medium-condensed";
+
+$font-family-base:        $font-family-sans-serif;
+$fun-font: "gloriahallelujah";
+
+$input-color-placeholder: #969696;
+
+$input-font-family: 'Helvetica-Condensed-Light';
+
+$grid-gutter-width:         40px;
+
+//
+$modal-header-border-color: transparent;
+
+$btn-default-bg: #e0e0e0;
+$btn-primary-border: #349ec4;
+$modal-backdrop-opacity: .8;

@@ -1,0 +1,63 @@
+.loginBox {
+  //position: relative;
+  //padding: 20px;
+
+  h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .login {
+    position: relative;
+    padding: 30px;
+    margin-top: 90px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    @include box-shadow(0px 0px 10px 1px  lightgray);
+  }
+
+  .textInput{
+    font-size: 14px;
+  }
+
+  .btn-login {
+    margin-top: 25px;
+  }
+
+  .btn {
+    height: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+
+    &:active {
+      font-size: 25px;
+    }
+
+  }
+
+  .forgot {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    div {
+      color: $orange;
+      font-size: 16px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+  }
+}
+
+
+.logoContainer {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.copyright {
+  font-size: 0.9em;
+  margin-top: 40px;
+  color: darken($body-bg, 20%);
+}

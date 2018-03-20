@@ -1,0 +1,21 @@
+.u-file {
+  position: relative;
+  margin-bottom: 50px;
+  .txt {
+    display: none !important;
+  }
+  .file {
+    display: none !important;
+    position: absolute;
+  }
+  .butt {
+    line-height: 21px;
+    position: absolute;
+    height: 35px;
+    width: 90px;
+    vertical-align: top;
+    .upload{
+      font-size: 18px;
+    }
+  }
+}
