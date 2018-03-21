@@ -79,19 +79,8 @@ a {
   color: #a94442;
 }
 
-.input-group-btn > button.btn {
-  z-index: 200;
-  position: absolute;
-}
 
-.dateButt {
-  position: absolute;
-  right: 1px;
-  top: 1px;
-  z-index: 200;
-  background-color: #fff;
-  border: 0;
-}
+
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -138,7 +127,8 @@ a {
 }
 
 button, select, html, textarea, input{
-  font-family: "helvetica-67-medium-condensed";
+  //font-family: "helvetica-67-medium-condensed";
+  font-family: 'Lato', Arial, sans-serif;
 }
 
 .advertiserCampaignsContainer {
@@ -150,7 +140,7 @@ button, select, html, textarea, input{
     text-decoration:none;
   }
   a>span{
-    color: white;
+    color: $gray-dark;
   }
   padding-left: 20px;
 }
@@ -161,7 +151,7 @@ button, select, html, textarea, input{
   padding: 15px 0 15px 0;
 }
 .userCenterAccordion:hover{
-  background-color: #464646;
+  background-color: #f4f2f2;
  }
 
 

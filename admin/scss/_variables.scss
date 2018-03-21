@@ -1,8 +1,8 @@
-$main-blue:#304599;
+$main-blue: rgb(48, 69, 153);
 $ligh-grey: #afb0b0;
 $white: #ffffff;
 $orange: rgb(112, 112, 112);
-$grey: #6f6f6f;
+$grey: #f2f2f2;
 
 
 
@@ -32,14 +32,18 @@ $brand-warning: $orange;
 
 
 
-$font-family-sans-serif: "helvetica-67-medium-condensed";
+//$font-family-sans-serif: "helvetica-67-medium-condensed";
+$font-family-sans-serif: 'Lato', Arial, sans-serif;
+;
 
 $font-family-base:        $font-family-sans-serif;
 $fun-font: "gloriahallelujah";
 
 $input-color-placeholder: #969696;
 
-$input-font-family: 'Helvetica-Condensed-Light';
+//$input-font-family: 'Helvetica-Condensed-Light';
+$input-font-family: 'Lato', Arial, sans-serif;
+;
 
 $grid-gutter-width:         40px;
 

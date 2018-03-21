@@ -12,14 +12,14 @@
                 </div>
                 <form class="form" name="form">
                     <div class="form-group emailRow textbox">
-                        <input class="form-control" type="text" name="password" id="email"
+                        <input class="loginInput" type="text" name="password" id="email"
                                ng-model="login"
                                placeholder="Email"
                                ng-change="serverError =''"
                                required>
                     </div>
                     <div class="form-group passwordRow" ng-class="{'has-error': form.email.$error.email}">
-                        <input class="form-control" type="password" name="password" id="password"
+                        <input class="loginInput" type="password" name="password" id="password"
                                ng-model="pass"
                                placeholder="Password"
 
@@ -30,7 +30,7 @@
                         <button class="btn btn-block btn-login" type="submit" ng-click="check()">LOGIN</button>
                     </div>
                     <div class="forgot text-center">
-                        <div ng-click="openForgotPassword()">Forgot your email address or password?</div>
+                        <div class="forgotPassword" ng-click="openForgotPassword()">Forgot your email address or password?</div>
                     </div>
                 </form>
                 <hr />
