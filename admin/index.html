@@ -26,81 +26,137 @@
 
     <div class="profile">
         <div class="usrPicture"></div>
-        <h2 class="usrName">{{'Vitaly Tarasiuk'}}</h2>
+        <h2 class="">{{'Vitaly Tarasiuk'}}</h2>
     </div>
 
     <!--<hr>-->
 
     <ul class="nav navbar-nav">
         <li>
-            <a href="#/homepage" ng-class="{active:isActive('/homepage')}">
-                <i class="fa fa-home"></i>
-                <span>Dashboard</span>
-            </a>
-        </li>
-
-
-
-
-        <div class="panel-group userCenterAccordion "
-             id="accordion"
-             data-toggle="collapse"
-             data-parent="#accordion"
-             data-target="#collapseFour">
-            <a ng-class="{active:isActive('/appStatsAPK')}">
-                <i class="fa fa-id-badge accordionIco"></i>
-                <span style="position: absolute; margin-top: 5px;">User center</span>
-                <i class="fa fa-caret-down onAccordionover" aria-hidden="true"
-                   style="float: right; margin-right: 20px"> </i>
-            </a>
-        </div>
-        <div id="collapseFour" class="panel-collapse collapse">
-            <div class="panel-body">
-                <ul>
-                    <li>
-                        <a href="#/userCenter" ng-class="{active:isActive('/userCenter')}">
-                            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-                            <i class="fa fa-info-circle accordionIco"></i>
-                            <span>User info</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#/userPayments" ng-class="{active:isActive('/userPayments')}">
-                            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-                            <i class="fa fa-credit-card accordionIco"></i>
-                            <span>User payments</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#/notificationsCenter" ng-class="{active:isActive('/notificationsCenter')}">
-                            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-                            <i class="fa fa-bell-o accordionIco"></i>
-                            <span>Notifications center</span>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#/rewards" ng-class="{active:isActive('/rewards')}">
-                            &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-                            <i class="fa fa-gift accordionIco"></i>
-                            <span>Rewards</span>
-                        </a>
-                    </li>
-
-
-                </ul>
+            <div class="panel-group userCenterAccordion "
+                 id="accordion"
+                 data-toggle="collapse"
+                 data-parent="#accordion"
+                 data-target="#collapseFour">
+                <a>
+                    <i class="fa fa-shield"></i>
+                    <span>CloudAlly account</span>
+                    <i class="fa fa-caret-down onAccordionover acordDownIco" aria-hidden="true"
+                       style="float: right;"> </i>
+                </a>
             </div>
-        </div>
-        </div>
-        </div>
+
+            <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <ul>
+                        <li>
+                            <a href="#/homepage" ng-class="{active:isActive('/homepage')}">
+                                &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                                <div class="circle"></div>
+                                <span>Account Status</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#/userPayments" ng-class="{active:isActive('/userPayments')}">
+                                &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                                <div class="circle"></div>
+                                <span>Billing Forecast</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#/notificationsCenter" ng-class="{active:isActive('/notificationsCenter')}">
+                                &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                                <div class="circle"></div>
+                                <span>Billing Parameters</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#/rewards" ng-class="{active:isActive('/rewards')}">
+                                &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                                <div class="circle"></div>
+                                <span>Account Pricing</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#/rewards" ng-class="{active:isActive('/rewards')}">
+                                &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                                <div class="circle"></div>
+                                <span>Account Settings</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
         </li>
+
+
 
 
         <li>
+            <div class="panel-group userCenterAccordion "
+                 id="accordion1"
+                 data-toggle="collapse"
+                 data-parent="#accordion1"
+                 data-target="#collapseFour1">
+                <a href="#/homepage" ng-class="{active:isActive('/homepage')}">
+                    <i class="fa fa-shield"></i>
+                    <span>CloudAlly account</span>
+                    <i class="fa fa-caret-down onAccordionover acordDownIco" aria-hidden="true"
+                       style="float: right;"> </i>
+                </a>
+            </div>
+
+            <div id="collapseFour1" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <ul>
+                        <li>
+                            <a href="#/homepage" ng-class="{active:isActive('/homepage')}">
+                                &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                                <div class="circle"></div>
+                                <span>Account Status</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/rewards" ng-class="{active:isActive('/rewards')}">
+                                &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
+                                <div class="circle"></div>
+                                <span>Account Settings</span>
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+        <li>
+            <a href="#/userCenter">
+                <i class="fa fa-id-badge"></i>
+                <span>Admin menu</span>
+            </a>
+        </li>
+
+        <li>
             <a href="#/">
-                <i class="fa fa-lock"></i>
+                <i class="fa fa-sign-out"></i>
                 <span>Log out</span>
             </a>
         </li>

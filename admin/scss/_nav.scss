@@ -10,16 +10,17 @@
 
 #sidenav {
   z-index: 200000;
-  background: $white;
+  background: #f4f2f2;
   width: 240px;
   height: 100%;
   overflow-y: auto;
   position: absolute;
   top: 0;
-  left: -247px;
+  left: -240px;
   border-left: 1px solid #333;
   transition: all .5s cubic-bezier(.25,.8,.25,1);;
   padding: 0 0;
+
 
   .logo {
     border-radius: $input-border-radius;
@@ -35,7 +36,6 @@
 
 
   .navbar-nav {
-    margin: 7.5px 0;
     width: 100%;
   }
 
@@ -59,26 +59,9 @@
       }
     }
 
-    &:hover, &:focus {
-      background-color: #f4f2f2;
-    }
-  }
-
-  .profile {
-    margin: 0 20px;
-    padding-bottom: 10px;
-    .usrPicture{
-      position: relative;
-      text-align: center;
-      height: 70px;
-      width: 70px;
-      border-radius: 50%;
-      left: 50%;
-      transform: translate(-50%);
-      background-color: $gray-lighter;
-    }
 
   }
+
 
   .profile, .balance {
 
@@ -115,10 +98,22 @@
   .profile {
     background-color: $main-blue;
     width: 100%;
-    margin-left: 0;
     padding-top: 20px;
     font-size: 18px;
     min-height: 150px;
+    margin-left: 0;    padding-bottom: 10px;
+    .usrPicture{
+      background: url("../img/bg/slide.jpg") no-repeat;
+      background-size: cover;
+      position: relative;
+      text-align: center;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: $gray-lighter;
+    }
     h2 {
       margin: 15px 0;
       text-align: center;
@@ -135,22 +130,23 @@
 
     span {
       position: relative;
-      bottom: 5px;
+      bottom: 1px;
     }
 
     &.active {
-      color: black;
-      text-shadow: 0px 1px 2px rgba(219, 219, 219, 0.35);
-      background-color: transparent;
-
-      i {
-        color: black;
-        text-shadow: 0px 1px 3px rgba(219, 219, 219, 0.35);
-      }
+      //color: black;
+      //text-shadow: 0px 1px 2px rgba(219, 219, 219, 0.35);
+      //background-color: transparent;
+      //
+      //i {
+      //  color: #ffc742;
+      //  text-shadow: 0px 1px 3px rgba(219, 219, 219, 0.35);
+      //}
+      background-color: white;
     }
 
     &:hover, &:focus {
-      background-color: #f4f2f2;
+      background-color: white;
     }
   }
 
@@ -160,7 +156,7 @@
 
   i {
     color: $main-blue;
-    font-size: 2em;
+    font-size: 20px;
     margin-right: 10px;
     width: 20px;
     text-align: center;

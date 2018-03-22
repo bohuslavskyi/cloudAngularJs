@@ -34,11 +34,29 @@ input:-webkit-autofill {  /* -webkit-autofill background */
     text-align: center;
   }
 
+  .blur{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    height: 330px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+  .loginInputWraper{
+    position: relative;
+    z-index: 1000;
+  }
   .login {
     position: relative;
     padding: 25px;
     margin-top: 200px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.84);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 1s cubic-bezier(.25,.8,.25,1);
   }
@@ -49,9 +67,9 @@ input:-webkit-autofill {  /* -webkit-autofill background */
 
 
   .btn-login{
-    color: $grey;
+    color: $gray;
     background-color: $white;
-    border: solid 2px $grey;
+    border: solid 2px $gray;
     margin-top: 30px;
   }
   .btn-login:hover{
