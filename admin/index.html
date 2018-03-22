@@ -20,7 +20,6 @@
 
 
 <body ng-class="{ 'sidebar-open': showHeaderLeftBar }">
-
 <aside ng-if="withLeftBar" id="sidenav" ng-controller="userCtrl">
 
 
@@ -50,7 +49,7 @@
                 <div class="panel-body">
                     <ul>
                         <li>
-                            <a href="#/homepage" ng-class="{active:isActive('/homepage')}">
+                            <a href="#/accountStatus" ng-class="{active:isActive('/accountStatus')}">
                                 &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
                                 <div class="circle"></div>
                                 <span>Account Status</span>
@@ -58,7 +57,7 @@
                         </li>
 
                         <li>
-                            <a href="#/userPayments" ng-class="{active:isActive('/userPayments')}">
+                            <a href="#/billingForecast" ng-class="{active:isActive('/billingForecast')}">
                                 &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
                                 <div class="circle"></div>
                                 <span>Billing Forecast</span>
@@ -66,7 +65,7 @@
                         </li>
 
                         <li>
-                            <a href="#/notificationsCenter" ng-class="{active:isActive('/notificationsCenter')}">
+                            <a href="#/billingParameters" ng-class="{active:isActive('/billingParameters')}">
                                 &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
                                 <div class="circle"></div>
                                 <span>Billing Parameters</span>
@@ -74,7 +73,7 @@
                         </li>
 
                         <li>
-                            <a href="#/rewards" ng-class="{active:isActive('/rewards')}">
+                            <a href="#/AccountPricing" ng-class="{active:isActive('/accountPricing')}">
                                 &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
                                 <div class="circle"></div>
                                 <span>Account Pricing</span>
@@ -82,7 +81,7 @@
                         </li>
 
                         <li>
-                            <a href="#/rewards" ng-class="{active:isActive('/rewards')}">
+                            <a href="#/accountSettings" ng-class="{active:isActive('/accountSettings')}">
                                 &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
                                 <div class="circle"></div>
                                 <span>Account Settings</span>
@@ -104,9 +103,9 @@
                  data-toggle="collapse"
                  data-parent="#accordion1"
                  data-target="#collapseFour1">
-                <a href="#/homepage" ng-class="{active:isActive('/homepage')}">
-                    <i class="fa fa-shield"></i>
-                    <span>CloudAlly account</span>
+                <a>
+                    <i class="fa fa-clipboard"></i>
+                    <span>Reports</span>
                     <i class="fa fa-caret-down onAccordionover acordDownIco" aria-hidden="true"
                        style="float: right;"> </i>
                 </a>
@@ -116,21 +115,12 @@
                 <div class="panel-body">
                     <ul>
                         <li>
-                            <a href="#/homepage" ng-class="{active:isActive('/homepage')}">
+                            <a href="#/subscribedAccounts" ng-class="{active:isActive('/subscribedAccounts')}">
                                 &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
                                 <div class="circle"></div>
-                                <span>Account Status</span>
+                                <span> Subscribed Accounts</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="#/rewards" ng-class="{active:isActive('/rewards')}">
-                                &emsp14;&emsp14;&emsp14;&emsp14;&emsp14;&emsp14;
-                                <div class="circle"></div>
-                                <span>Account Settings</span>
-                            </a>
-                        </li>
-
-
                     </ul>
                 </div>
             </div>
@@ -138,19 +128,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
         <li>
-            <a href="#/userCenter">
+            <a href="#/adminMenu">
                 <i class="fa fa-id-badge"></i>
-                <span>Admin menu</span>
+                <span>Admin Menu</span>
             </a>
         </li>
 
@@ -222,15 +203,13 @@
 <script type="text/javascript" src="js/source/advertiserConsole/controllers/auth.js"></script>
 <script type="text/javascript" src="js/source/advertiserConsole/controllers/userCtrl.js"></script>
 <script type="text/javascript" src="js/source/advertiserConsole/controllers/appStatsCtrl.js"></script>
+<script type="text/javascript" src="js/source/advertiserConsole/controllers/accountStatusCtrl.js"></script>
 
 
 
 <script type="text/javascript" src="js/source/common/directives/common.directives.u-file.js"></script>
 <script type="text/javascript" src="js/source/common/directives/common.directives.u-header.js"></script>
 <script type="text/javascript" src="js/source/common/directives/common.directives.u-err-msg.js"></script>
-
-<script type="text/javascript" src="js/source/common/directives/common.directives.homepage.js"></script>
-
 
 <!--<script>-->
 <!--(function (i, s, o, g, r, a, m) {-->

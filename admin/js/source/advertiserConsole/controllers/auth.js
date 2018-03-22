@@ -18,7 +18,7 @@
                     }).then(function (resp) {
                             console.log(resp);
                             uStorage.saveCurrentUser(resp);
-                            $location.url('/homepage');
+                            $location.url('/accountStatus');
                         }, function (err) {
                             $scope.serverError = err.data.error.message;
                         });

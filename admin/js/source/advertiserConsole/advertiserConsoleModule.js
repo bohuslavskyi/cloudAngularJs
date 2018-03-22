@@ -10,65 +10,69 @@
                 templateUrl: 'templates/console/login.html',
                 name: 'login'
             })
-            .when('/b2c', {
-                templateUrl: 'templates/console/b2c.html',
-                name: 'b2c',
+            .when('/accountStatus', {
+                templateUrl: 'templates/console/accountStatus.html',
+                name: 'accountStatus',
                 access: {
                     requiresLogin: true
                 }
             })
-            .when('/apk', {
-                templateUrl: 'templates/console/apk.html',
-                name: 'apk',
+            .when('/billingForecast', {
+                templateUrl: 'templates/console/billingForecast.html',
+                name: 'billingForecast',
                 access: {
                     requiresLogin: true
                 }
             })
-            .when('/sdk', {
-                templateUrl: 'templates/console/sdk.html',
-                name: 'sdk',
+            .when('/billingParameters', {
+                templateUrl: 'templates/console/billingParameters.html',
+                name: 'billingParameters',
                 access: {
                     requiresLogin: true
                 }
             })
-            .when('/userCenter', {
-                templateUrl: 'templates/console/userCenter.html',
-                name: 'userCenter',
+            // .when('/userCenter', {
+            //     templateUrl: 'templates/console/userCenter.html',
+            //     name: 'userCenter',
+            //     access: {
+            //         requiresLogin: true,
+            //         userType: "apk"
+            //     }
+            // })
+            // .when('/userPayments', {
+            //     templateUrl: 'templates/console/userPayments.html',
+            //     name: 'userPayments',
+            //     access: {
+            //         requiresLogin: true,
+            //         userType: "apk"
+            //     }
+            // })
+            .when('/AccountPricing', {
+                templateUrl: 'templates/console/accountPricing.html',
+                name: 'AccountPricing',
                 access: {
                     requiresLogin: true,
-                    userType: "apk"
                 }
             })
-            .when('/userPayments', {
-                templateUrl: 'templates/console/userPayments.html',
-                name: 'userPayments',
+            .when('/accountSettings', {
+                templateUrl: 'templates/console/accountSettings.html',
+                name: 'accountSettings',
                 access: {
                     requiresLogin: true,
-                    userType: "apk"
                 }
             })
-            .when('/notificationsCenter', {
-                templateUrl: 'templates/console/apkNotificationCenter.html',
-                name: 'NotificationsCenter',
+            .when('/subscribedAccounts', {
+                templateUrl: 'templates/console/subscribedAccounts.html',
+                name: 'subscribedAccounts',
                 access: {
                     requiresLogin: true,
-                    userType: "apk"
                 }
             })
-            .when('/rewards', {
-                templateUrl: 'templates/console/rewards.html',
-                name: 'NotificationsCenter',
+            .when('/adminMenu', {
+                templateUrl: 'templates/console/adminMenu.html',
+                name: 'adminMenu',
                 access: {
                     requiresLogin: true,
-                    userType: "apk"
-                }
-            })
-            .when('/homepage', {
-                templateUrl: 'templates/console/homepage.html',
-                name: 'homepage',
-                access: {
-                    requiresLogin: true,
-                    userType: "apk"
                 }
             })
             .otherwise({
